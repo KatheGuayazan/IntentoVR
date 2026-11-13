@@ -6,6 +6,11 @@ public class CambioCancion : MonoBehaviour
 
     public AudioClip[] canciones;
 
+    public void Start()
+    {
+      CambiarCancion(0);
+    }
+
     public void CambiarCancion(int indice)
     {
         if (indice < 0 || indice >= canciones.Length)
